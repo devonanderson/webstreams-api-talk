@@ -1,0 +1,23 @@
+{
+  "name": "webstreams-api-talk",
+  "version": "1.0.0",
+  "description": "Live coding examples for my Web Streams API conference talk",
+  "main": "index.js",
+  "scripts": {
+    "generate-certs": "openssl req -x509 -newkey rsa:2048 -nodes -sha256 -subj '/CN=localhost' -keyout localhost-privkey.pem -out localhost-cert.pem",
+    "web": "node web.js",
+    "api": "node api.js",
+    "api-http2": "node api-http2.js"
+  },
+  "author": "Devon Anderson",
+  "license": "ISC",
+  "volta": {
+    "node": "18.14.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
